@@ -38,4 +38,20 @@ const employers = [
     },
 ]
 
-console.log('employers', employers, typeof employers);
+for (let i = 0; i < employers.length; i++){
+    for (let key in employers[i]){
+        console.log(employers[i][key]);
+        document.getElementById('myemployers').innerHTML += employers[i][key];
+    }
+}
+    // console.log(employers[i]);
+    // 
+
+
+// let teams = document.getElementById('myemployers').innerHTML = employers;
+// console.log('teams', teams, typeof teams);
+
+// console.log('employers', employers, typeof employers);
+// for (let i = 0; i < employers.length; i++){
+//     console.log(employers[i]);
+//     document.getElementById('myemployers').innerHTML = (employers[i]);
