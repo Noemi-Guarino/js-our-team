@@ -5,6 +5,9 @@
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+let teamcontainer = document.querySelector(".containerteams");
+
+
 const employers = [
     impiegato1 = {
         name: 'Wayne Barnett',
@@ -41,7 +44,10 @@ const employers = [
 for (let i = 0; i < employers.length; i++){
     for (let key in employers[i]){
         console.log(employers[i][key]);
-        document.getElementById('myemployers').innerHTML += employers[i][key];
+        teamcontainer.innerHTML +=
+        `<div>${employers[i][key]}</div>`;
+     
+        // document.getElementById('myemployers').innerHTML += employers[i][key];
     }
 }
     // console.log(employers[i]);
