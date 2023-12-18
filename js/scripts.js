@@ -45,25 +45,19 @@ const employers = [
     },
 ]
 
-// let imgItems = [
-//     'wayne-barnett-founder-ceo.jpg',
-//     'angela-caroll-chief-editor.jpg',
-//     'walter-gordon-office-manager.jpg',
-//     'angela-lopez-social-media-manager.jpg',
-//     'scott-estrada-developer.jpg',
-//     'barbara-ramos-graphic-designer.jpg',
-// ];
-
-
+// SOLUZIONE BONUS
 for (let i = 0; i < employers.length; i++){
-    for (let key in employers[i]){
-        console.log(employers[i][key]);
-        teamcontainer.innerHTML +=
-        `<div>${employers[i][key]}</div>`;
-    }
+    teamcontainer.innerHTML += `<h2>${employers[i]['name']}</h2>`;
+    teamcontainer.innerHTML += `<p>${employers[i]['role']}</p>`;
+    teamcontainer.innerHTML += `<img src="${employers[i]['image']}">`;
 }
-    // console.log(employers[i]);
-    // 
 
+// SOLUZIONE ESERCIZIO BASE
+// for (let i = 0; i < employers.length; i++){
+//     for (let key in employers[i]){
+//         console.log(employers[i][key]);
+//         teamcontainer.innerHTML +=
+//         `<div>${employers[i][key]}</div>`;
+//     }
+// }
 
-<div><img src="${imgItems[i]}"alt=""></div>
