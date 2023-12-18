@@ -47,9 +47,7 @@ const employers = [
 
 // SOLUZIONE BONUS
 for (let i = 0; i < employers.length; i++){
-    teamcontainer.innerHTML += `<h2>${employers[i]['name']}</h2>`;
-    teamcontainer.innerHTML += `<p>${employers[i]['role']}</p>`;
-    teamcontainer.innerHTML += `<img src="${employers[i]['image']}">`;
+    teamcontainer.innerHTML += `<div class="cards"><div class="img_container"><img src="${employers[i]['image']}"></div><div class="description"><h2>${employers[i]['name']}</h2><p>${employers[i]['role']}</p></div>`;
 }
 
 // SOLUZIONE ESERCIZIO BASE
